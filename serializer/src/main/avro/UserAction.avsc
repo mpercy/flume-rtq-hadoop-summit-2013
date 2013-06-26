@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "UserAction",
+  "namespace": "com.cloudera.flume.demo",
+  "fields": [
+    {"name": "txn_id", "type": "long"},
+    {"name": "ts", "type": "long"},
+    {"name": "action", "type": "string"},
+    {"name": "product_id", "type": "long"},
+    {"name": "user_ip", "type": "string"},
+    {"name": "user_name", "type": "string"},
+    {"name": "path", "type": "string"},
+    {"name": "referer", "type": "string", "default":""}
+  ]
+}

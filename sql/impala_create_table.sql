@@ -1,0 +1,1 @@
+CREATE TABLE WebDataArchive (txn_id bigint, ts bigint, action string, product_id bigint, user_ip string, user_name string, path string, referer string) PARTITIONED BY (year int, month int, day int) STORED AS PARQUETFILE;

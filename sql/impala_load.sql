@@ -1,0 +1,1 @@
+INSERT OVERWRITE TABLE webdataarchive PARTITION (year = 2013, month = 6, day = 20) SELECT txn_id, ts, action, product_id, user_ip, user_name, path, referer FROM webdatain WHERE year = 2013 AND month = 6 AND day = 20;

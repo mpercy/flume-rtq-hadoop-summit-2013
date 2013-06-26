@@ -1,0 +1,1 @@
+SELECT txn_id, product_id, user_name, action from webdatain where ((year = 2013 AND month = 6 AND day = 25) OR (year = 2013 AND month = 6 AND day = 26) AND product_id = 30111) UNION ALL SELECT txn_id, product_id, user_name, action from webdataarchive where ((year != 2013 AND month != 6 AND day != 25) AND (year != 2013 AND month != 6 AND day != 26) AND product_id = 30111);
